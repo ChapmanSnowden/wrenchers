@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-	has_many :bikes, foreign_key: 'owner_id'
+	has_many :bikes, class_name: 'Bike', foreign_key: 'owner_id'
 end

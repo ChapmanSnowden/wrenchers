@@ -24,7 +24,9 @@ describe 'Garage' do
 	end
 
 	context 'with parked bike' do
-		let(:ducati) { FactoryGirl.create :bike, name: 'Daisy', description: '2011 Ducati Monster 1100', owner_id: user.id }
+		let!(:ducati) { FactoryGirl.create :bike, name: 'Daisy', description: '2011 Ducati Monster 1100', owner_id: user.id }
+
+		before { visit root_path }
 
 		it 'displays portrait of bike' do
 			expect(page).to have_content ducati.name

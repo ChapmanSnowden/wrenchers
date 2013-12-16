@@ -3,7 +3,5 @@ class GarageController < ApplicationController
 
 	def index
 		@bikes = current_user.bikes
-		p '###'
-		p @bikes
 	end
 end
