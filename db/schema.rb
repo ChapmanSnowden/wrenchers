@@ -11,15 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131215101037) do
+ActiveRecord::Schema.define(version: 20131216040709) do
 
   create_table "bikes", force: true do |t|
     t.integer  "owner_id"
     t.string   "name"
     t.integer  "current_mileage"
-    t.integer  "oil_change_interval"
-    t.integer  "valve_check_interval"
-    t.integer  "chain_lube_interval"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "starting_mileage"
