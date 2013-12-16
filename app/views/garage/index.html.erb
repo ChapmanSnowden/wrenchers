@@ -3,9 +3,9 @@ Welcome to your Garage, <%= current_user.name %>
 <% if @bikes.empty? %>
 	Do you want to <%= link_to 'park your bike', new_bike_path %>?
 <% else %>
-	<ul>
+	<ul class='garage'>
 	<% @bikes.each do |bike| %>
-		<li><%= link_to bike.name, bike_path(bike) %></li>
+		<li class='bike'><%= link_to bike.name, bike_path(bike) %></li>
 	<% end %>
 	</ul>
 <% end %>
