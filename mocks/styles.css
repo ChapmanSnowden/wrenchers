@@ -1,0 +1,79 @@
+body {
+	font-family: Georgia;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: blue;
+}
+
+ul {
+	list-style: none;
+}
+
+ul.bikes {
+	width: 900px;
+	margin: 130px auto;
+}
+
+.bikes li {
+	display: inline-block;
+	text-align: center;
+	width: 300px;
+	margin: 0 50px;
+}
+
+.bikes img {
+	width: 300px;
+	display: block;
+}
+
+.bike img {
+	width: 300px;
+	float: left;
+}
+
+.bike .details {
+	display: inline-block;
+	height: 220px;
+	margin-left: 20px;
+}
+
+.bike .details span{
+	display: block;
+}
+
+.events button.new {
+	margin-left: 90px;
+}
+
+.events li {
+	padding-left: 50px;
+	width: 330px;
+	line-height: 22px;
+}
+
+.events li.today {
+	border-bottom: 1px solid black;
+}
+
+.events li.due {
+	color: red;
+}
+
+.events li button {
+	position: absolute;
+	left: 40px;
+	display: none;
+}
+
+.events li:hover button {
+	display: inline-block;
+}
