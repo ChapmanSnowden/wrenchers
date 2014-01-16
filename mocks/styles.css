@@ -54,14 +54,22 @@ ul.bikes {
 	margin-left: 90px;
 }
 
+.events .upcoming {
+	display: inline-block;
+}
+
+.events .done {
+	display: inline-block;
+}
+
 .events li {
 	padding-left: 50px;
 	width: 330px;
 	line-height: 22px;
 }
 
-.events li.today {
-	border-bottom: 1px solid black;
+.details .today {
+	margin: 20px 0;
 }
 
 .events li.due {
@@ -72,8 +80,4 @@ ul.bikes {
 	position: absolute;
 	left: 40px;
 	display: none;
-}
-
-.events li:hover button {
-	display: inline-block;
 }
